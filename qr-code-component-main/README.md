@@ -41,7 +41,7 @@ Since this is the first project that I've done, I learned the basics of using gi
 
 ### Continued development
 
-I need the see what are best practices for coming up with names for classes in my HTML before my next project.
+I need the see what are best practices for coming up with names for classes in my HTML before my next project. I also need to learn how the 'box-shadow' property works.
 
 
 ## Author
