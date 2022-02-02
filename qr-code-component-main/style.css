@@ -30,15 +30,18 @@ body {
 
 .QR-code__description {
     padding: 10px;
+    margin-top: 14px;
 }
 
 .QR-code__title {
+    margin: 0;
     font-weight: 700;
     font-size: 22px;
     color: hsl(218, 44%, 22%);
 }
 
 .QR-code__text {
+    margin-top: 16px;
     font-size: 15px;
     color: hsl(220, 15%, 55%);
 }
