@@ -1,47 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
+:root {
+    font-size: 62.5%;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    height: 100vh;
     font-family: 'Outfit', sans-serif;
-    background-color: hsl(212, 45%, 89%);
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    height: 100vh;
+    background-color: hsl(212, 45%, 89%);
 }
 
 .QR-code {
-    width: 320px;
-    padding: 1rem;
     text-align: center;
+    width: 32rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.05);
     background-color: hsl(0, 0%, 100%);
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
 .QR-code__img {
+    display: block;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
-.QR-code__description {
-    padding: 10px;
-    margin-top: 14px;
-}
 
 .QR-code__title {
-    margin: 0;
+    font-size: 2.2rem;
     font-weight: 700;
-    font-size: 22px;
+    margin: 2.4rem 0 0 0;
     color: hsl(218, 44%, 22%);
 }
 
 .QR-code__text {
-    margin-top: 16px;
-    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    margin: 1.6rem 0 2.4rem 0;
+    padding: 0 1.6rem 0 1.6rem;
     color: hsl(220, 15%, 55%);
 }
