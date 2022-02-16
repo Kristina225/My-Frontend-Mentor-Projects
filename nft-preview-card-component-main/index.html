@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+  <title>Frontend Mentor | NFT preview card component</title>
+
+</head>
+<body>
+
+  <main>
+    <div class="card">
+      <div class="card__image--container">
+        <img src="images/image-equilibrium.jpg" alt="card image" class="card__image">
+        <div class="card__image--backdrop"></div>
+        <img src="images/icon-view.svg" alt="view icon" class="card__image--icon">
+      </div>
+      <div class="card__text">
+        <h1 class="card__text--title">Equilibrium #3429</h1>
+        <p class="card__text--description">Our Equilibrium collection promotes balance and calm.</p>
+        <div class="card__text--data">
+          <div class="card__text--data--eth">
+            <img src="images/icon-ethereum.svg" alt="ethereum icon" class="card__text--data--eth--image">
+            <span class="card__text--data--eth--text">0.041 ETH</span>
+          </div>
+          <div class="card__text--data--time">
+            <img src="images/icon-clock.svg" alt="clock icon" class="card__text--data--time--image">
+            <span class="card__text--data--time--text">3 days left</span>
+          </div>
+        </div>
+        <hr>
+        <div class="card__text--author">
+          <img src="images/image-avatar.png" alt="author photo" class="card__text--author--image">
+          <p class="card__text--author--name">Creation of <span>Jules Wyvern</span></p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
