@@ -1,155 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 
 :root {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Outfit', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin: 0;
-    padding: 0;
-    background-color: hsl(217, 54%, 11%);
-    color:hsl(215, 51%, 70%);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 1.5rem;
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
-    height: 59.6rem;
-    width: 35rem;
-    padding: 2.4rem;
-    background-color: hsl(216, 50%, 16%);
-    border-radius: 1.5rem;
-    box-shadow: 0 5rem 2.5rem rgba(0, 0, 0, 0.0953);
+  width: 100%;
+  max-width: 35rem;
+  padding: 2.4rem;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1.5rem;
+  box-shadow: 0 5rem 2.5rem rgba(0, 0, 0, 0.0953);
 }
 
 .card__image--container {
-    position: relative;
+  position: relative;
 }
 
-/* Displayed with JS when hover over image */
+.card__image--container:hover .card__image--backdrop,
+.card__image--container:hover .card__image--icon {
+  display: block;
+}
 
-.card__image--backdrop{
-    display: none;
-    background-color: hsl(178, 100%, 50%);
-    opacity: 0.5;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 0.8rem;
+.card__image--backdrop {
+  display: none;
+  background-color: hsl(178, 100%, 50%);
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0.8rem;
 }
 
 .card__image {
-    display: block;
-    position: relative;
-    width: 30.2rem;
-    height: 30.2rem;
-    border-radius: 0.8rem;
+  display: block;
+  position: relative;
+  /* width: 30.2rem;
+  height: 30.2rem; */
+  /* let the content specify width */
+  max-width: 100%;
+  border-radius: 0.8rem;
 }
 
-/* Displayed with JS when hover over image */
 .card__image--icon {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .card__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }
 
 .card__text--title {
-    margin: 2.4rem 0 0 0;
-    color: #fff;
-    line-height: 2.77rem;
-    font-size: 2.2rem;
-    
+  margin: 2.4rem 0 0 0;
+  color: #fff;
+  line-height: 2.77rem;
+  font-size: 2.2rem;
 }
 
 .card__text--description {
-    margin: 1.6rem 0 0 0;
-    font-weight: 300;
-    line-height: 2.6rem;
+  margin: 1.6rem 0 0 0;
+  font-weight: 300;
+  line-height: 2.6rem;
 }
 
 .card__text--data {
-    display: flex;
-    width: 100%;
-    margin: 2.4rem 0;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  margin: 2.4rem 0;
+  justify-content: space-between;
+  align-items: center;
 }
 
 hr {
-    margin: 0;
-    height: 1px;
-    width: 100%;
-    color: hsl(215, 32%, 27%); 
+  margin: 0;
+  height: 1px;
+  width: 100%;
+  color: hsl(215, 32%, 27%);
 }
 
 .card__text--data--eth,
 .card__text--data--time,
 .card__text--author {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .card__text--data--eth--text {
-    padding-left: 0.648rem;
-    font-size: 1.6rem;
-    color: hsl(178, 100%, 50%);
+  padding-left: 0.648rem;
+  font-size: 1.6rem;
+  color: hsl(178, 100%, 50%);
 }
 
 .card__text--data--time--text {
-    padding-left: 0.77rem;
-    font-size: 1.6rem;
-    font-weight: 400;
+  padding-left: 0.77rem;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 .card__text--author {
-    margin: 0.4rem 0 0.8rem 0;
+  margin: 0.4rem 0 0.8rem 0;
 }
 
 .card__text--author--image {
-    width: 3.3rem;
-    height: 3.3rem;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    
+  width: 3.3rem;
+  height: 3.3rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
 }
 
 .card__text--author--name {
-    padding-left: 1.6rem;
-    font-weight: 400;
-    font-size: 1.6rem;
+  padding-left: 1.6rem;
+  font-weight: 400;
+  font-size: 1.6rem;
 }
 
 .card__text--author--name span {
-    padding-left: 0.5rem;
-    color: #fff;
-    font-size: 1.6rem;
-    font-weight: 400;
+  padding-left: 0.5rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 .card__image--container:hover,
 .card__text--title:hover,
 .card__text--author--name span:hover {
-    cursor: pointer;
-    color:hsl(178, 100%, 50%);
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
 }
