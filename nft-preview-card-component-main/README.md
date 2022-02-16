@@ -45,11 +45,20 @@ Users should be able to:
 
 ### What I learned
 
-I practiced positioning elements with the 'position' CSS property, as well adjusting the position and better centering elements with the 'translate' property. 
+I practiced positioning elements with the 'position' CSS property, as well adjusting the position and better centering elements with the 'translate' property.
+I learned how to keep the correct size of my elements on large screens (defined in px or rem) and make them responsive on smaller screens by using setting both 'width' and 'max-width' on my document:
+```css
+.card {
+  width: 100%;
+  max-width: 35rem;
+}
+```
+I also learned to add some padding to my body in these projects, so that my layout doesn't break on smaller screens.
 
 ### Continued development
 
 I need to learn about transitions and transforms before continuing with the next project.
+I also need to start using the Prettier extension in my VS Code editor.
 
 ### Useful resources
 
@@ -62,6 +71,4 @@ I need to learn about transitions and transforms before continuing with the next
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+I would like to thank Frontend Mentor user Yazdun (https://www.frontendmentor.io/profile/Yazdun) for reviewing and helping me improve my solution. His suggestions have been very helpful and beneficial to my learning process.
